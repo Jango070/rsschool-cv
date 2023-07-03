@@ -1,8 +1,0 @@
-## Reshetnikov Evgen 
-Discord : jango._.
-about me: I have a desire to develop and learn something new, so I will try to do everything that is required
-languages I know HTML, C++
-no code examples to show
-none
-graduated from high school, studying at the college at the Faculty of Cybersecurity, completed IT courses
-My English lvl it's B1 went to a specialized school and now I go to English tutors to improve it
