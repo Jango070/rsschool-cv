@@ -1,4 +1,4 @@
-## Reshetnikov Evgen ##
+## Reshetnikov Evgen 
 Discord : jango._.
 about me: I have a desire to develop and learn something new, so I will try to do everything that is required
 languages I know HTML, C++
