@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Нажмите на кнопку для перехода на cv</title>
-  <style>
-    body {
-      text-align: center;
-      margin-top: 100px;
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20px;
-      border-radius: 50%;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" >
 </head>
-<body>
-  <img src="your_photo.jpg" alt="Моя фотография">
-  <br>
-  <button onclick="window.location.href = 'https://Jango070.github.io/rsschool-cv/cv';">Перейти на другой сайт</button>
+
+<body >
+  <div id="background"></div>
+  <div class="header" id="background" style="width: 100%; height: 210px; background: linear-gradient(44.81deg, #5096F1 0%, #202020 100%); position: relative; border-top-left-radius: 10px; border-top-right-radius: 10px; box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.3), 5px 0px 10px rgba(0, 0, 0, 0.3);">
+    <div style="position: absolute; left: 35px; top: 15px; right: 380px; bottom: 15px; overflow: hidden; border-radius: 50%;">
+      <img src="johncena-john.gif" alt="Фотография" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="text-block" style="position: absolute; top: 10px; left: 270px; right: 25px; bottom: 20px;">
+      <p style="width: 208px; height: 74px; padding: 10px; color: white; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word;" style="font-family: Arial, sans-serif">
+        Evgen Reshetnikov
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex;">
+    
+    <div style="width: 345px; height: 742px; background-color: #202020; border-bottom-left-radius: 10px; box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.3);">
+      <div class="rounded-section section-block blue">
+        <div class="container">
+          <span class="centered-word;" class="word;"style="font-family: Arial, sans-serif";><h2>Skills</h2></span>
+          <hr class="line">
+        </div>
+       <p> <span class="marker"style="font-family: Arial, sans-serif">HTML</span> </p>  
+       <p> <span class="marker"style="font-family: Arial, sans-serif">C++</span> </p>  
+      </div>
+      <div class="rounded-section section-block blue">
+        <div class="container"></div>
+        <span class="centered-word;" class="word;"style="font-family: Arial, sans-serif"><h2>Languages</h2></span>
+        <hr class="line">      
+        <p style="font-family: Arial, sans-serif">English (B1)</p>
+      </div>
+      <div class="rounded-section section-block orange long-section">
+        <div class="container"></div>
+        <span class="centered-word;" class="word;" style="font-family: Arial, sans-serif"><h2>Contact Information</h2></span>
+        <hr class="line">  
+        <p> <span class="marker" style="font-family: Arial, sans-serif">Click on button</span> </p>        
+        <button class="button" onclick="window.location.href = 'https://mail.google.com/mail/u/1/?ogbl#inbox?compose=CllgCJlKpLtrbrSHFghJkJZXZBWFvrsShsCfPpzxXbxBSfHpbDrJrpJCQKDJJfPjQhGhmNsdmRg';" >Gmail</button>    
+       
+        <button class="button" onclick="window.location.href = 'https://t.me/llIIllIIllIIllIl';" >Telegram</button>
+        <button class="button" onclick="window.location.href = 'https://discord.gg/jango._.';" >Discord</button>
+        <button class="button" onclick="window.location.href = 'https://github.com/Jango070';" >GitHub</button>
+      </div>
+    </div>
+    <div style="width: 345px; height: 742px; background: #101010; box-shadow: 20px 40px 40px rgba(37, 37, 37, 0.50); margin-left: 0px; border-bottom-right-radius: 10px;">
+      <div class="rounded-section section-block1 sect1" style="color: #ffffff;">
+        <div class="container"></div>
+        <span class="centered-word;" class="word;" style="font-family: Arial, sans-serif"><h2>Education</h2></span>
+        <hr class="line">  
+        <p style="font-family: Arial, sans-serif" class="marker">Studying at the Faculty of Cybersecurity, College (ongoing)</p>
+          <p class="marker" style="font-family: Arial, sans-serif">Completed IT Courses</p>
+      </div>
+      <div class="rounded-section section-block1 sect2" style="color: #ffffff;">
+        <div class="container"></div>
+        <span class="centered-word;" class="word;" style="font-family: Arial, sans-serif"><h2>Experience</h2></span>
+        <hr class="line">  
+        <p style="font-family: Arial, sans-serif">Participated in various coding projects and exercises during IT courses,
+           Developed personal projects using HTML and C++</p>
+      </div>
+      
+      <div class="rounded-section section-block grey long-section1" style="color: #ffffff;">
+        <div class="container"></div>
+        <span class="centered-word;" class="word;"><h2 style="font-family: Arial, sans-serif">Courses</h2></span>
+        <hr class="line"> 
+        <div id="container1" class="container">
+          <div class="container">
+            <a href="https://rs.school/js/">
+              <img src="Снимок экрана 2023-07-09 222710.png" alt="Your Image">
+            </a>
+            <button class="button" onclick="window.location.href = 'https://rs.school/js/';" >Ссылка на курс</button> 
+          </div>
+        </div> 
+       </div>
+    </div>
+  </div>
 </body>
 </html>
