@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e97b7b;
+  width: 600px;
+  height: 942px;
+  margin: 0 auto;
+}
+.marker::before {
+  content: "•"; /* символ маркера */
+  margin-right: 5px; /* расстояние между маркером и словом */
+}
+.container { 
+position: relative;
+  display: table;
+  height: 0px;
+  width: 250px;
+  text-align: center;
+}
+.container1 {
+  width: 200px; /* Задайте нужную ширину контейнера */
+  height: 200px; /* Задайте нужную высоту контейнера */
+  overflow: hidden; /* Скрыть все, что выходит за границы контейнера */
+}
+.container2 {
+  text-align: center; /* Центрировать содержимое по горизонтали */
+}
+
+.button2 {
+  margin-top: 10px; /* Отступ сверху для кнопки */
+}
+
+
+.container img {
+  width: 100%; /* Заполнить контейнер по ширине */
+  height: auto; /* Подстраиваться под соотношение сторон */
+  display: block; /* Установить как блочный элемент, чтобы применить ширины и высоту */
+}
+
+#container1 {
+  border-radius: 50%; /* Задайте радиус, чтобы создать круглую форму */
+}
+
+#container2 {
+  border-radius: 20%; /* Задайте другой радиус для второго контейнера */
+}
+
+.word {
+  border-bottom: 1px solid rgb(0, 0, 0); /* Стиль и цвет линии */
+  padding-bottom: 5px; /* Отступ ниже линии */
+}
+
+.centered-word {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+.rounded-section {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-block1 {
+  background-color: #151515;
+  box-shadow: 0 0 7px #5096F1;
+}
+
+.section-block.sect1 {
+  background-color: #151515;
+  color: #ffffff;
+  box-shadow: 0 0 20px #5096F1;
+}
+
+.section-block.sect2 {
+  background-color: #151515;
+  color: #ffffff;
+  box-shadow: 0 0 20px #5096F1;
+}
+
+.section-block.grey {
+  background-color: #151515;
+  color: #ffffff;
+  box-shadow: 0 0 20px #5096F1;
+}
+
+.rounded-section {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.section-block {
+  background-color: #2c2c2c;
+}
+
+.section-block.blue {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  box-shadow: 0 0 7px #5096F1;
+}
+
+.section-block.green {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  box-shadow: 0 0 7px #5096F1;
+}
+
+.section-block.orange {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  box-shadow: 0 0 7px #5096F1;
+}
+
+.long-section {
+  height: 300px;
+  overflow: auto;
+}
+.long-section1 {
+  height: 290px;
+  overflow: auto;
+}
+.button {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(150deg, rgba(51, 106, 206, 1) 0%, rgba(57, 114, 213, 1) 50%, rgba(35, 90, 191, 1) 50%, rgba(1, 60, 163, 1) 100%);
+  color: #fff;
+  border-radius: 35px;
+  border: none; /* Убираем границы */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убираем подчеркивание текста */
+  display: inline-block; /* Превращаем кнопку в блочный элемент */
+  font-size: 16px; /* Размер текста */
+  margin: 4px 2px; /* Внешние отступы кнопки */
+  cursor: pointer; /* Изменяем курсор при наведении */
+}
+.button:hover {
+  background: linear-gradient(150deg, rgba(1, 60, 163, 1) 0%, rgba(35, 90, 191, 1) 50%, rgba(57, 114, 213, 1) 50%, rgba(51, 106, 206, 1) 100%);
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(-45deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease-in-out infinite, neonAnimation 1s ease-in-out infinite alternate;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes neonAnimation {
+  0% { text-shadow: 0 0 5px rgba(255, 255, 255, 1); }
+  100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 1); }
+}
+.gradient-bg {
+  background: linear-gradient(blue, black);
+  /* Дополнительные стили для элемента */
+  width: 200px;
+  height: 200px;
+}
+/* Общие стили, применяемые ко всем разрешениям экрана */
+
+/* Медиа-запросы для маленьких устройств, например, мобильных телефонов */
+@media (max-width: 767px) {
+  /* Стили, применяемые для разрешения экрана шириной до 767 пикселей */
+  /* Здесь вы можете изменить размеры, позиционирование и т. д. элементов на маленьких экранах */
+}
+
+/* Медиа-запросы для средних устройств, например, планшетов */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Стили, применяемые для разрешения экрана шириной от 768 до 1023 пикселей */
+  /* Здесь вы можете изменить размеры, позиционирование и т. д. элементов на средних экранах */
+}
+
+/* Медиа-запросы для больших устройств, например, настольных компьютеров и ноутбуков */
+@media (min-width: 1024px) {
+  /* Стили, применяемые для разрешения экрана шириной 1024 пикселя и более */
+  /* Здесь вы можете изменить размеры, позиционирование и т. д. элементов на больших экранах */
+}
